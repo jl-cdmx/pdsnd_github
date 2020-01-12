@@ -2,7 +2,7 @@
 January 12ve, 2020
 
 ### Project Title
-bikeshare
+Explore US Bikeshare Data
 
 ### Description
 Explore bike share data used in Chicago, New York City, and Washington by computing a variety of descriptive statistics.
