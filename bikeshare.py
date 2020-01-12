@@ -7,11 +7,13 @@ import time
 import pandas as pd
 import numpy as np
 
+#Dictionary: city in lower case: dataset csv file name
 CITY_DATA = { 
     'chicago': 'chicago.csv',
     'new york city': 'new_york_city.csv',
     'washington': 'washington.csv' }
 
+#Dictionary: available months name in lower case: month id
 MONTHS = { 
     'all': 'all',
     'january': '1',
@@ -21,6 +23,7 @@ MONTHS = {
     'may': '5',
     'june': '6' }
 
+#Dictionary: day of the week lower case: day of the week in dt
 DAYS_OF_WEEK = { 
     'all': 'all',
     'monday' : 'Monday',
