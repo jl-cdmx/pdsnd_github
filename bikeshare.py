@@ -58,9 +58,16 @@ def read_string_and_select(filter_type, valid_values_dictionary):
             print("\nYou typed \'{}\'. It is not a valid option, try again.\n".format(read_str))
     return valid_values_dictionary.get(default_value)
 
+
 """Prints the welcome message to the user at the beginnig of the execution"""
 def print_welcome_message():
     print('\nHello! Let\'s explore some US bikeshare data!\n')
+
+
+"""Prints the goodbye message to the user at the end of the execution"""
+def print_goodbye_message():
+    print('\nExecution is over. Bye.\n')    
+
 
 def get_filters():
     """
@@ -251,6 +258,7 @@ def main():
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
+    print_goodbye_message()
 
 
 if __name__ == "__main__":
