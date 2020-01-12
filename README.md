@@ -1,15 +1,25 @@
 ### Date created
-Include the date you created this project and README file.
+January 12ve, 2020
 
 ### Project Title
-Replace the Project Title
+bikeshare
 
 ### Description
-Describe what your project is about and what it does
+Explore bike share data used in Chicago, New York City, and Washington by computing a variety of descriptive statistics.
 
 ### Files used
-Include the files used
+.gitignore
+bikeshare.py
+chicago.csv         #No included in GitHub repository
+new_york_city.csvc  #No included in GitHub repository
+README.md
+washington.csv      #No included in GitHub repository
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+https://classroom.udacity.com/nanodegrees/nd104/dashboard/overview
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.set_index.html
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.index.html
+https://www.geeksforgeeks.org/how-to-get-column-names-in-pandas-dataframe/
+https://www.geeksforgeeks.org/different-ways-to-iterate-over-rows-in-pandas-dataframe/
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Timestamp.html
 
