@@ -62,6 +62,16 @@ def read_string_and_select(filter_type, valid_values_dictionary):
     return valid_values_dictionary.get(default_value)
 
 
+"""Prints the welcome message to the user at the beginnig of the execution"""
+def print_welcome_message():
+    print('\nHello! Let\'s explore some US bikeshare data!\n')
+
+
+"""Prints the goodbye message to the user at the end of the execution"""
+def print_goodbye_message():
+    print('\nExecution is over. Bye.\n')    
+
+
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -71,7 +81,6 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('\nHello! Let\'s explore some US bikeshare data!\n')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = read_string_and_select("cities", CITY_DATA)
 
@@ -238,6 +247,7 @@ def show_raw_data(df, row_num = 5):
     print('-'*40)
 
 def main():
+    print_welcome_message()
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
@@ -251,6 +261,7 @@ def main():
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
+    print_goodbye_message()
 
 
 if __name__ == "__main__":
